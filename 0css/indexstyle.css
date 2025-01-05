@@ -1,0 +1,510 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "ShareTech";
+  src: url("/00fonts/Share_Tech/ShareTech-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ChivoMono";
+  src: url("/00fonts/chivo-mono/ChivoMono[wght].ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: "ShareTech", sans-serif;
+  background: linear-gradient(to bottom, #a294f9, #f5efff);
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Ensures the gradient doesn't repeat as you scroll */
+  background-size: cover;
+}
+
+/* carduri */
+.card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 150px;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.card {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 15px;
+  width: 450px;
+  height: 450px;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  text-align: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
+}
+
+/* text de sub card */
+.extra-info {
+  position: relative;
+  top: 80px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* imagini carduri */
+.imagine-card {
+  padding: 15px 15px 10px 15px;
+  overflow: hidden;
+  height: calc(100% - 0px);
+}
+
+.imagine-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* footer */
+footer {
+  background-color: #ffffff;
+  color: #000;
+  padding: 15px 40px; /* Folosește aceleași valori de padding ca și pentru navbar */
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 40%; /* Dimensiunea rămâne aceeași */
+  border-radius: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  margin-top: 150px;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-family: "ShareTech", sans-serif; /* Fontul să fie același ca la navbar */
+  font-size: 20px; /* Dimensiunea fontului să fie aceeași ca la navbar */
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0px 0;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin: 0 20px;
+  gap: 50px;
+}
+
+.footer-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-links a:hover {
+  color: #a294f9;
+}
+
+.footer-links i {
+  margin-right: 8px;
+  font-size: 24px;
+}
+
+.footer-links a:hover i {
+  color: #a294f9;
+}
+
+/* Logo */
+
+#logo img {
+  max-width: 200px;
+}
+
+/* Top navigation menu */
+.topnav {
+  background-color: #333;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Hidden links container */
+#myLinks {
+  display: none; /* Inițial ascuns */
+  flex-direction: column; /* Afișare verticală */
+  background-color: #333; /* Fundal pentru meniul extins */
+  width: 100%; /* Lățime completă */
+  position: absolute; /* Poziționat sub meniul principal */
+  top: 80px; /* Exact sub bara de navigare */
+  left: 0;
+  z-index: 1000;
+  text-align: center;
+}
+
+/* Links inside the menu */
+#myLinks a {
+  display: block;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  border-bottom: 1px solid #555;
+}
+
+#myLinks a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Hamburger icon */
+.icon {
+  cursor: pointer;
+  color: white;
+  font-size: 50px;
+  margin-right: 5%;
+}
+
+/* Responsive behavior */
+@media screen and (max-width: 700px) {
+  .body {
+    background: orange;
+    height: 100%;
+    width: 100%;
+  }
+
+  .active {
+    height: 110px;
+    scale: 0.6;
+  }
+
+  .topnav {
+    align-items: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  #logo {
+    height: 200px;
+  }
+  .icon {
+    margin-top: 5%;
+  }
+  .logo {
+    display: none;
+  }
+}
+
+@media (min-width: 701px) {
+  /* containere navbar și logo */
+  .body {
+  }
+  .nav-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2%;
+  }
+
+  /* logo */
+  .logo {
+    left: 5px;
+    top: -30px;
+  }
+
+  .logo img {
+    width: 200px;
+    height: auto;
+  }
+
+  /* navbar */
+  .navbarM {
+    display: flex;
+    margin: auto;
+    margin-top: 25px;
+    align-items: center;
+    height: 150px;
+    margin-right: 20%;
+  }
+  .navbar {
+    display: flex;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 40px;
+    padding: 15px 10px 10px 10px;
+    height: 50%;
+    margin-right: 20%;
+
+    margin-right: 20%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+
+  .navbar ul {
+    display: flex;
+    list-style: none;
+  }
+
+  .navbar li {
+    display: flex;
+    margin: 0 55px;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .navbar a:hover {
+    color: #a294f9;
+  }
+
+  .topnav {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .nav-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2%;
+  }
+
+  /* logo */
+  .logo {
+    left: 5px;
+    top: -30px;
+  }
+
+  .logo img {
+    width: 200px;
+    height: auto;
+  }
+
+  /* navbar */
+  .navbarM {
+    display: flex;
+    margin: auto;
+    margin-top: 25px;
+    align-items: center;
+    height: 150px;
+    margin-right: 20%;
+  }
+  .navbar {
+    display: flex;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 40px;
+    padding: 15px 10px 10px 10px;
+    height: 50%;
+    margin-right: 20%;
+
+    margin-right: 20%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+
+  .navbar ul {
+    display: flex;
+    list-style: none;
+  }
+
+  .navbar li {
+    display: flex;
+    margin: 0 55px;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .navbar a:hover {
+    color: #a294f9;
+  }
+
+  .topnav {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .nav-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2%;
+  }
+
+  /* logo */
+  .logo {
+    left: 5px;
+    top: -30px;
+  }
+
+  .logo img {
+    width: 200px;
+    height: auto;
+  }
+
+  /* navbar */
+  .navbarM {
+    display: flex;
+    margin: auto;
+    margin-top: 25px;
+    align-items: center;
+    height: 150px;
+    margin-right: 20%;
+  }
+  .navbar {
+    display: flex;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 40px;
+    padding: 15px 10px 10px 10px;
+    height: 50%;
+    margin-right: 20%;
+
+    margin-right: 20%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+
+  .navbar ul {
+    display: flex;
+    list-style: none;
+  }
+
+  .navbar li {
+    display: flex;
+    margin: 0 55px;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .navbar a:hover {
+    color: #a294f9;
+  }
+
+  .topnav {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .nav-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2%;
+  }
+
+  /* logo */
+  .logo {
+    left: 5px;
+    top: -30px;
+  }
+
+  .logo img {
+    width: 200px;
+    height: auto;
+  }
+
+  /* navbar */
+  .navbarM {
+    display: flex;
+    margin: auto;
+    margin-top: 25px;
+    align-items: center;
+    height: 150px;
+    margin-right: 20%;
+  }
+  .navbar {
+    display: flex;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 40px;
+    padding: 15px 10px 10px 10px;
+    height: 50%;
+    margin-right: 20%;
+
+    margin-right: 20%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+
+  .navbar ul {
+    display: flex;
+    list-style: none;
+  }
+
+  .navbar li {
+    display: flex;
+    margin: 0 55px;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .navbar a:hover {
+    color: #a294f9;
+  }
+
+  .topnav {
+    display: none;
+  }
+}

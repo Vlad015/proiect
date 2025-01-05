@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'ShareTech';
+    src: url('/00fonts/Share_Tech/ShareTech-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ChivoMono';
+    src: url('/00fonts/chivo-mono/ChivoMono[wght].ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%; /* Setează înălțimea pentru întreaga pagină */
+    margin: 0; /* Elimină marginea implicită */
+}
+
+body {
+    font-family: 'ShareTech', sans-serif;
+    background: linear-gradient(to bottom, #A294F9, #F5EFFF); /* Gradientul de sus în jos */
+    background-size: cover; /* Se asigură că gradientul acoperă întreaga pagină */
+    background-position: center center; /* Poziționează gradientul în centrul paginii */
+    min-height: 100%; /* Asigură că pagina se întinde pe întreaga înălțime a ecranului */
+    width: 100%; /* Lățimea va fi 100% din ecran */
+}
+
+
+/* Logo */
+.logo {
+    position: absolute;
+    left: 5px;
+    top: -30px;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+}
+
+/* Navbar */
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 40px;
+    padding: 15px 40px;
+    gap: 30px;
+    margin-top: 25px;
+    margin-left: calc(20% - 50px);
+    margin-right: 20%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: flex;
+    margin: 0 55px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    color: #A294F9;
+}
+
+/* Carduri */
+.card-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.card {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 30%;
+    height: 450px;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
+}
+
+/* Imagini carduri */
+.imagine-card {
+    padding: 15px 15px 70px 15px;
+    overflow: hidden;
+    height: calc(100% - 0px);
+}
+
+.imagine-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #ffffff;
+    color: #000;
+    padding: 15px 40px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 40%;
+    border-radius: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    margin-top: 150px;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-family: 'ShareTech', sans-serif;
+    font-size: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0px 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.footer-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-links a:hover {
+    color: #A294F9;
+}
+
+.footer-links i {
+    margin-right: 8px;
+    font-size: 24px;
+}
+
+.footer-links a:hover i {
+    color: #A294F9;
+}
+
+/* Responsivitate pentru carduri */
+@media (max-width: 768px) {
+    .card {
+        width: 45%; /* 2 carduri pe rând */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* 1 card pe rând */
+    }
+}
+
+/* 1. FA INDEX RESPONSIVE
+2. REZOLVA CACATU ALA DE GRADIENT
+3.SCHIMBA POZELE*/
