@@ -132,7 +132,7 @@
     flex-wrap: wrap;
     gap: 150px;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   .card {
@@ -189,8 +189,6 @@
 
   .card h2 {
     position: absolute;
-    text-align: center;
-    justify-content: center;
     bottom: 3px;
     left: 60px;
     font-size: 25px;
@@ -209,6 +207,21 @@
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+  }
+
+  /* text card*/
+.text-card{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 90%;
+}
+
+  .text-card p{
+    position: relative;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
 
