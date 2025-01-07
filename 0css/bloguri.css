@@ -147,12 +147,61 @@
     justify-content: space-between;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
   }
+
+  .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
+  }
+
+  .card:hover .extra-info p {
+    color: #a294f9;
+    font-weight: bold; 
+    transition: all 0.3s ease; 
+  }
+
+  .card:hover .extra-info{
+    background-color: #383838;
+  }
+  
+
+  /* chestia aia din dreapta cu citeste mai mult*/
+  .extra-info{
+    position: relative;
+    background-color: #949494;
+    width: 10%;
+    height: 190px;
+    border-radius: 10px;
+    top: 5px;
+    right: 5px;
+ }
+
+  .extra-info p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    margin: 0;
+    color: #424242;
+}
+
+  /*card h3 si text*/
+
+  .card h2 {
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    bottom: 3px;
+    left: 60px;
+    font-size: 25px;
+  }
   
 /* imagini carduri */
 .imagine-card {
     padding: 5px 5px 30px 5px;
     overflow: hidden;
     height: calc(100% - 0px);
+    width: 350px;
   }
   
   .imagine-card img {
