@@ -19,18 +19,15 @@
 }
 
 html, body {
-    height: 100%; /* Setează înălțimea pentru întreaga pagină */
-    margin: 0; /* Elimină marginea implicită */
-}
-
-body {
-    font-family: 'ShareTech', sans-serif;
-    background: linear-gradient(to bottom, #A294F9, #F5EFFF); /* Gradientul de sus în jos */
-    background-size: cover; /* Se asigură că gradientul acoperă întreaga pagină */
-    background-position: center center; /* Poziționează gradientul în centrul paginii */
-    min-height: 100%; /* Asigură că pagina se întinde pe întreaga înălțime a ecranului */
-    width: 100%; /* Lățimea va fi 100% din ecran */
-}
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    font-family: "ShareTech", sans-serif;
+    background: linear-gradient(to bottom, #a294f9, #f5efff);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+  }
 
 
 /* Logo */
@@ -86,13 +83,14 @@ body {
 
 /* Carduri */
 .card-container {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
     margin-top: 100px;
+    margin-left: 10%;
 }
 
 .card {
