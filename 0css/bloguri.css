@@ -224,7 +224,23 @@
     transform: translate(-50%, -50%);
   }
 
+ a{
+    text-decoration: none;
+    color: inherit;
+ }
 
+ a:hover {
+    color: inherit; 
+  }
+
+ a:active{
+    color: inherit;
+ }
+
+ a:visited {
+    color: black !important;
+    text-decoration: none;
+ }
 
   /*responsive*/
 
