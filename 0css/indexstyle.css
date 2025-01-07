@@ -235,8 +235,6 @@ footer {
 
 @media (min-width: 701px) {
   /* containere navbar și logo */
-  .body {
-  }
   .nav-container {
     position: relative;
     display: flex;
