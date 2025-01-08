@@ -29,6 +29,27 @@ html, body {
     background-size: cover;
   }
 
+  /*titlu*/
+  .titlu-pagina{
+    position: relative;
+    background-color: #ffffff;
+    width: 20%;
+    height: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 4%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titlu-pagina h1 {
+    font-size: 40px;
+    margin: 0;
+  }
+
 
 /* Logo */
 .logo {
@@ -83,14 +104,14 @@ html, body {
 
 /* Carduri */
 .card-container {
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    margin-top: 100px;
-    margin-left: 10%;
+    margin-top: 1%;
+    margin-left: 15%;
 }
 
 .card {
