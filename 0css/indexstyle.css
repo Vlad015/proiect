@@ -26,7 +26,7 @@ body {
   font-family: "ShareTech", sans-serif;
   background: linear-gradient(to bottom, #a294f9, #f5efff);
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Ensures the gradient doesn't repeat as you scroll */
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -204,7 +204,6 @@ footer {
 /* Responsive behavior */
 @media screen and (max-width: 700px) {
   .body {
-    background: orange;
     height: 100%;
     width: 100%;
   }
@@ -213,17 +212,18 @@ footer {
     height: 110px;
     scale: 0.6;
   }
-
+  
   .topnav {
     align-items: none;
   }
-
+  
   .navbar {
     display: none;
   }
-
+  
   #logo {
     height: 200px;
+    color: #a294f9;
   }
   .icon {
     margin-top: 5%;
@@ -272,8 +272,6 @@ footer {
     padding: 15px 10px 10px 10px;
     height: 50%;
     margin-right: 20%;
-
-    margin-right: 20%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   }
 
@@ -302,74 +300,7 @@ footer {
     display: none;
   }
 }
-@media (min-width: 768px) {
-  .nav-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 2%;
-  }
 
-  /* logo */
-  .logo {
-    left: 5px;
-    top: -30px;
-  }
-
-  .logo img {
-    width: 200px;
-    height: auto;
-  }
-
-  /* navbar */
-  .navbarM {
-    display: flex;
-    margin: auto;
-    margin-top: 25px;
-    align-items: center;
-    height: 150px;
-    margin-right: 20%;
-  }
-  .navbar {
-    display: flex;
-    position: relative;
-    background-color: #ffffff;
-    border-radius: 40px;
-    padding: 15px 10px 10px 10px;
-    height: 50%;
-    margin-right: 20%;
-
-    margin-right: 20%;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  }
-
-  .navbar ul {
-    display: flex;
-    list-style: none;
-  }
-
-  .navbar li {
-    display: flex;
-    margin: 0 55px;
-  }
-
-  .navbar a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    font-size: 20px;
-  }
-
-  .navbar a:hover {
-    color: #a294f9;
-  }
-
-  .topnav {
-    display: none;
-  }
-}
 @media (min-width: 992px) {
   .nav-container {
     position: relative;
