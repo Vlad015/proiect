@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "ShareTech";
+    src: url("/00fonts/Share_Tech/ShareTech-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ChivoMono";
+    src: url("/00fonts/chivo-mono/ChivoMono[wght].ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    font-family: "ShareTech", sans-serif;
+    background: linear-gradient(to bottom, #a294f9, #f5efff);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.titlu-pagina {
+    position: relative;
+    background-color: #ffffff;
+    width: 20%;
+    height: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 4%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titlu-pagina h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.logo{
+    position: relative;
+    width: 50%;
+    top: 999999999px;
+}
+
+.content{
+    position: relative;
+    left: 50%;
+    top: 20%;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 700px) {
+    .body {
+      background: orange;
+      height: 100%;
+      width: 100%;
+    }
+  
+    .active {
+      height: 110px;
+      scale: 0.6;
+    }
+  
+    .topnav {
+      align-items: none;
+    }
+  
+    .navbar {
+      display: none;
+    }
+  
+    #logo {
+      height: 200px;
+    }
+    .icon {
+      margin-top: 5%;
+    }
+    .logo {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 701px) {
+    /* containere navbar și logo */
+
+    .nav-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 2%;
+    }
+  
+    /* logo */
+    .logo {
+      left: 5px;
+      top: -30px;
+    }
+  
+    .logo img {
+      width: 200px;
+      height: auto;
+    }
+  
+    /* navbar */
+    .navbarM {
+      display: flex;
+      margin: auto;
+      margin-top: 25px;
+      align-items: center;
+      height: 150px;
+      margin-right: 20%;
+    }
+    .navbar {
+      display: flex;
+      position: relative;
+      background-color: #ffffff;
+      border-radius: 40px;
+      padding: 15px 10px 10px 10px;
+      height: 50%;
+      margin-right: 20%;
+  
+      margin-right: 20%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+  
+    .navbar ul {
+      display: flex;
+      list-style: none;
+    }
+  
+    .navbar li {
+      display: flex;
+      margin: 0 55px;
+    }
+  
+    .navbar a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  
+    .navbar a:hover {
+      color: #a294f9;
+    }
+  
+    .topnav {
+      display: none;
+    }
+  }
+  @media (min-width: 768px) {
+    .nav-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 2%;
+    }
+  
+    /* logo */
+    .logo {
+      left: 5px;
+      top: -30px;
+    }
+  
+    .logo img {
+      width: 200px;
+      height: auto;
+    }
+  
+    /* navbar */
+    .navbarM {
+      display: flex;
+      margin: auto;
+      margin-top: 25px;
+      align-items: center;
+      height: 150px;
+      margin-right: 20%;
+    }
+    .navbar {
+      display: flex;
+      position: relative;
+      background-color: #ffffff;
+      border-radius: 40px;
+      padding: 15px 10px 10px 10px;
+      height: 50%;
+      margin-right: 20%;
+  
+      margin-right: 20%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+  
+    .navbar ul {
+      display: flex;
+      list-style: none;
+    }
+  
+    .navbar li {
+      display: flex;
+      margin: 0 55px;
+    }
+  
+    .navbar a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  
+    .navbar a:hover {
+      color: #a294f9;
+    }
+  
+    .topnav {
+      display: none;
+    }
+  }
+  @media (min-width: 992px) {
+    .nav-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 2%;
+    }
+  
+    /* logo */
+    .logo {
+      left: 5px;
+      top: -30px;
+    }
+  
+    .logo img {
+      width: 200px;
+      height: auto;
+    }
+  
+    /* navbar */
+    .navbarM {
+      display: flex;
+      margin: auto;
+      margin-top: 25px;
+      align-items: center;
+      height: 150px;
+      margin-right: 20%;
+    }
+    .navbar {
+      display: flex;
+      position: relative;
+      background-color: #ffffff;
+      border-radius: 40px;
+      padding: 15px 10px 10px 10px;
+      height: 50%;
+      margin-right: 20%;
+  
+      margin-right: 20%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+  
+    .navbar ul {
+      display: flex;
+      list-style: none;
+    }
+  
+    .navbar li {
+      display: flex;
+      margin: 0 55px;
+    }
+  
+    .navbar a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  
+    .navbar a:hover {
+      color: #a294f9;
+    }
+  
+    .topnav {
+      display: none;
+    }
+  }
+  @media (min-width: 1200px) {
+    .nav-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 2%;
+    }
+  
+    /* logo */
+    .logo {
+      left: 5px;
+      top: -30px;
+    }
+  
+    .logo img {
+      width: 200px;
+      height: auto;
+    }
+  
+    /* navbar */
+    .navbarM {
+      display: flex;
+      margin: auto;
+      margin-top: 25px;
+      align-items: center;
+      height: 150px;
+      margin-right: 20%;
+    }
+    .navbar {
+      display: flex;
+      position: relative;
+      background-color: #ffffff;
+      border-radius: 40px;
+      padding: 15px 10px 10px 10px;
+      height: 50%;
+      margin-right: 20%;
+  
+      margin-right: 20%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+  
+    .navbar ul {
+      display: flex;
+      list-style: none;
+    }
+  
+    .navbar li {
+      display: flex;
+      margin: 0 55px;
+    }
+  
+    .navbar a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  
+    .navbar a:hover {
+      color: #a294f9;
+    }
+  
+    .topnav {
+      display: none;
+    }
+  }
