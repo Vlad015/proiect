@@ -27,10 +27,10 @@ html, body {
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: cover;
-  }
+}
 
-  /*titlu*/
-  .titlu-pagina{
+/* Titlu */
+.titlu-pagina {
     position: relative;
     background-color: #ffffff;
     width: 20%;
@@ -43,13 +43,12 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .titlu-pagina h1 {
+.titlu-pagina h1 {
     font-size: 40px;
     margin: 0;
-  }
-
+}
 
 /* Logo */
 .logo {
@@ -79,7 +78,6 @@ html, body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
-
 .navbar ul {
     display: flex;
     list-style: none;
@@ -104,22 +102,29 @@ html, body {
 }
 
 /* Carduri */
+.card-container a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+}
+
 .card-container {
     width: 70%;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
+    gap: 30px; /* Spațiul dintre carduri */
+    justify-content: space-between; /* Distribuire uniformă */
     margin-top: 1%;
-    margin-left: 15%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card {
     position: relative;
     background-color: #ffffff;
     border-radius: 15px;
-    width: 30%;
+    width: calc((100% - 60px) / 3); /* 3 carduri pe rând, cu spații */
     height: 450px;
     transition: transform 0.3s ease-in-out;
     display: flex;
@@ -154,7 +159,6 @@ html, body {
     object-fit: cover;
     border-radius: 10px;
 }
-
 
 /* Footer */
 footer {
@@ -216,7 +220,7 @@ footer {
 /* Responsivitate pentru carduri */
 @media (max-width: 768px) {
     .card {
-        width: 45%; /* 2 carduri pe rând */
+        width: calc((100% - 30px) / 2); /* 2 carduri pe rând */
     }
 }
 
