@@ -22,7 +22,7 @@
     margin: 0;
     padding: 0;
     min-height: 100%;
-    font-family: "ShareTech", sans-serif;
+    font-family: "ShareTech","ChivoMono", sans-serif;
     background: linear-gradient(to bottom, #a294f9, #f5efff);
     background-repeat: no-repeat;
     background-attachment: fixed; 
@@ -31,6 +31,7 @@
 
   .container{
     display: block;
+    align-items: center;
   }
 
   footer {
@@ -93,6 +94,9 @@
   #logo img {
     max-width: 200px;
   }
+  #chart{
+   
+  }
 
 #myLinks {
     display: none; 
@@ -126,6 +130,12 @@
     font-size: 50px;
     margin-right: 5%;
   }
+  p{
+    font-size: 22px;
+  }
+#galaxy{
+  height: 400px;
+}
 
 
  /* Responsive behavior */
