@@ -29,6 +29,10 @@
     background-size: cover;
   }
 
+  .container{
+    display: block;
+  }
+
   footer {
     background-color: #ffffff;
     color: #000;
