@@ -1,6 +1,7 @@
 * {
-  font-family: "ChivoMono";
-  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 @font-face {
   font-family: "ShareTech";
@@ -15,16 +16,20 @@
   font-weight: normal;
   font-style: normal;
 }
-.outer {
-  height: 100vh;
-  background: linear-gradient(to bottom, #a294f9, #f5efff) no-repeat;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
+.navbar {
+  justify-content: center !important; /* Folosește !important dacă regula este suprascrisă de alte reguli */
+  height: 53px;
 }
-.img{
-  font-size: 10%;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: "ShareTech", sans-serif !important;
+  background: linear-gradient(to bottom, #a294f9, #f5efff);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 .container {
   margin-top: 10%;
@@ -39,19 +44,7 @@
  background-color: #908F8F;
  display: block;
 }
-.topnav {
-  display: none;
-}
-img{
-  height: 150px;
-}
-.navbarM{
-  padding-top: 30px;
-  display: flex;
-  height: 10%;
-  border-radius: 25px;
-  width: 50%;
-}
+
 #frame2 {
   height: 80%;
   margin: 5px;
@@ -142,54 +135,7 @@ footer {
   display: none;
   
 }
-.nav-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 2%;
-}
-.navbarM {
-  display: flex;
-  margin: auto;
-  align-items: center;
-  height: 150px;
-  margin-right: 20%;
-}
-.navbar1 {
-  display: flex;
-  position: relative;
-  background-color: #ffffff;
-  border-radius: 40px;
-  padding: 30px;
-  height: 50%;
-  margin-right: 20%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-}
 
-.navbar1 ul {
-  display: flex;
-}
-
-.navbar1 li {
-  display: flex;
-  margin: 0 55px;
-}
-
-.navbar1 a {
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-  font-size: 17px;
-  margin-top: -20px;
-  width: 100px;
-  display: flex;
-}
-
-.navbar1 a:hover {
-  color: #a294f9;
-}
 #mesaj{
   height: 100px;
   width: 98%;
@@ -203,6 +149,54 @@ footer {
 #name{
   width: 98%;
   margin-left: 10px;
+}
+/* Logo */
+#logo img {
+  max-width: 200px;
+}
+
+/* Top navigation menu */
+.topnav {
+  background-color: #333;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Hidden links container */
+#myLinks {
+  display: none;
+  flex-direction: column;
+  background-color: #333;
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  z-index: 1000;
+  text-align: center;
+}
+
+/* Links inside the menu */
+#myLinks a {
+  display: block;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  border-bottom: 1px solid #555;
+}
+
+#myLinks a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Hamburger icon */
+.icon {
+  cursor: pointer;
+  color: white;
+  font-size: 50px;
+  margin-right: 5%;
 }
 
 /* Responsive behavior */
@@ -312,7 +306,7 @@ footer {
   .nav-container {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: center !important;
     align-items: center;
     width: 100%;
     padding: 2%;
@@ -381,7 +375,7 @@ footer {
   .nav-container {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: center !important;
     align-items: center;
     width: 100%;
     padding: 2%;

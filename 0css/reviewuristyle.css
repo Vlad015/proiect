@@ -51,16 +51,8 @@ html, body {
 }
 
 /* Logo */
-.logo {
-    position: absolute;
-    left: 5px;
-    top: -30px;
-}
 
-.logo img {
-    width: 200px;
-    height: auto;
-}
+
 
 /* Navbar */
 .navbar {
@@ -420,8 +412,8 @@ footer {
 
   .navbar {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center !important;
+    align-items: center !important;
     background-color: #ffffff;
     border-radius: 30px;
     padding: 15px 40px;
