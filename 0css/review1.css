@@ -1,128 +1,139 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  @font-face {
-    font-family: "ShareTech";
-    src: url("/00fonts/Share_Tech/ShareTech-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: "ChivoMono";
-    src: url("/00fonts/chivo-mono/ChivoMono[wght].ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  html, body {
-    margin: 0;
-    padding: 0;
-    min-height: 100%;
-    font-family: "ShareTech", sans-serif;
-    background: linear-gradient(to bottom, #a294f9, #f5efff);
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-size: cover;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  footer {
-    background-color: #ffffff;
-    color: #000;
-    padding: 15px 40px; 
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 40%; 
-    border-radius: 40px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    margin-top: 150px;
-    margin-left: 30%;
-    margin-right: 30%;
-    font-family: "ShareTech", sans-serif; 
-    font-size: 20px; 
-  }
+@font-face {
+  font-family: "ShareTech";
+  src: url("/00fonts/Share_Tech/ShareTech-Regular.woff2") format("woff2"),
+       url("/00fonts/Share_Tech/ShareTech-Regular.woff") format("woff"),
+       url("/00fonts/Share_Tech/ShareTech-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
-  .footer-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .footer-links {
-    list-style: none;
-    padding: 0;
-    margin: 0px 0;
-  }
-  
-  .footer-links li {
-    display: inline-block;
-    margin: 0 20px;
-    gap: 50px;
-  }
-  
-  .footer-links a {
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .footer-links a:hover {
-    color: #a294f9;
-  }
-  
-  .footer-links i {
-    margin-right: 8px;
-    font-size: 24px;
-  }
-  
-  .footer-links a:hover i {
-    color: #a294f9;
-  }
 
-  #logo img {
-    max-width: 200px;
-  }
+@font-face {
+  font-family: "ChivoMono";
+  src: url("/00fonts/chivo-mono/ChivoMono[wght].ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: "ShareTech", sans-serif !important;
+  background: linear-gradient(to bottom, #a294f9, #f5efff);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+code{
+  font-family: "ChiviMono", monospace;
+}
+
+footer {
+  background-color: #ffffff;
+  color: #000;
+  padding: 15px 40px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 40%;
+  border-radius: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  margin-top: 150px;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-family: "ShareTech", sans-serif;
+  font-size: 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0px 0;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin: 0 20px;
+  gap: 50px;
+}
+
+.footer-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-links a:hover {
+  color: #a294f9;
+}
+
+.footer-links i {
+  margin-right: 8px;
+  font-size: 24px;
+}
+
+.footer-links a:hover i {
+  color: #a294f9;
+}
+
+#logo img {
+  max-width: 200px;
+}
 
 #myLinks {
-    display: none; 
-    flex-direction: column; 
-    background-color: #333;
-    width: 100%; 
-    position: absolute; 
-    top: 80px; 
-    left: 0;
-    z-index: 1000;
-    text-align: center;
-  }
-  
-  #myLinks a {
-    display: block;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-    font-size: 18px;
-    border-bottom: 1px solid #555;
-  }
-  
-  #myLinks a:hover {
-    background-color: #555;
-    border-radius: 5px;
-  }
-  
-  .icon {
-    cursor: pointer;
-    color: white;
-    font-size: 50px;
-    margin-right: 5%;
-  }
+  display: none;
+  flex-direction: column;
+  background-color: #333;
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  z-index: 1000;
+  text-align: center;
+}
 
+#myLinks a {
+  display: block;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  border-bottom: 1px solid #555;
+}
+
+#myLinks a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.icon {
+  cursor: pointer;
+  color: white;
+  font-size: 50px;
+  margin-right: 5%;
+}
+img.modele {
+  width: 500px;
+  object-fit:cover;
+  background-size: cover;
+}
 
 /* Responsive behavior */
 @media screen and (max-width: 768px) {
@@ -189,8 +200,8 @@
 
   .navbar {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center !important;
+    align-items: center !important;
     background-color: #ffffff;
     border-radius: 30px;
     padding: 15px 40px;
@@ -219,7 +230,7 @@
   }
 
   .navbar a:hover {
-    color: #A294F9;
+    color: #a294f9;
   }
 
   .topnav {
@@ -288,7 +299,7 @@
   }
 
   .navbar a:hover {
-    color: #A294F9;
+    color: #a294f9;
   }
 
   .topnav {
@@ -357,7 +368,7 @@
   }
 
   .navbar a:hover {
-    color: #A294F9;
+    color: #a294f9;
   }
 
   .topnav {
