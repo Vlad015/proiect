@@ -32,6 +32,10 @@ html, body {
 p{
   max-width: 45%;
 }
+
+#paragraf2{
+  max-width: 100% !important;
+}
 .container{
   margin: 20px 0 0 20px;
   font-size: 18px;
