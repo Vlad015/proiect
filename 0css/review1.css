@@ -97,6 +97,15 @@ footer {
   max-width: 200px;
 }
 
+/* Top navigation menu */
+.topnav {
+  background-color: #333;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Hidden links container */
 #myLinks {
   display: none;
   flex-direction: column;
@@ -109,6 +118,7 @@ footer {
   text-align: center;
 }
 
+/* Links inside the menu */
 #myLinks a {
   display: block;
   color: white;
@@ -123,12 +133,14 @@ footer {
   border-radius: 5px;
 }
 
+/* Hamburger icon */
 .icon {
   cursor: pointer;
   color: white;
   font-size: 50px;
   margin-right: 5%;
 }
+
 img.modele {
   width: 500px;
   object-fit:cover;
@@ -152,7 +164,7 @@ img.modele {
   }
 
   .navbar {
-    display: none;
+    display: none !important;
   }
 
   #logo {

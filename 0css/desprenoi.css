@@ -55,6 +55,54 @@ p{
     justify-content: center;
     align-items: center;
 }
+#logo img {
+  max-width: 200px;
+}
+
+/* Top navigation menu */
+.topnav {
+  background-color: #333;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Hidden links container */
+#myLinks {
+  display: none;
+  flex-direction: column;
+  background-color: #333;
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  z-index: 1000;
+  text-align: center;
+}
+
+/* Links inside the menu */
+#myLinks a {
+  display: block;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  border-bottom: 1px solid #555;
+}
+
+#myLinks a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Hamburger icon */
+.icon {
+  cursor: pointer;
+  color: white;
+  font-size: 50px;
+  margin-right: 5%;
+}
+
 
 .titlu-pagina h1 {
     font-size: 40px;
@@ -81,6 +129,13 @@ p{
 
   .topnav {
     align-items: none;
+  }
+  .titlu-pagina{
+    margin-top: 100px !important;
+    width: 150px !important;
+  }
+  h1{
+    font-size: 30px !important;
   }
 
   .navbar {

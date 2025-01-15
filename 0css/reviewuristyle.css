@@ -51,8 +51,50 @@ html, body {
 }
 
 /* Logo */
+#logo img {
+  max-width: 200px;
+}
 
+.topnav {
+  background-color: #333;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#myLinks {
+  display: none;
+  flex-direction: column;
+  background-color: #333;
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  z-index: 1000;
+  text-align: center;
+}
 
+/* Links inside the menu */
+#myLinks a {
+  display: block;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  border-bottom: 1px solid #555;
+}
+
+#myLinks a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Hamburger icon */
+.icon {
+  cursor: pointer;
+  color: white;
+  font-size: 50px;
+  margin-right: 5%;
+}
 
 /* Navbar */
 .navbar {
@@ -230,7 +272,7 @@ footer {
   }
 
   #logo {
-    height: 200px;
+    height: 100px;
     color: #a294f9;
   }
 

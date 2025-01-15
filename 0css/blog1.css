@@ -108,9 +108,13 @@ footer {
 #logo img {
   max-width: 200px;
 }
-#chart {
-}
 
+.topnav {
+  background-color: #333;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 #myLinks {
   display: none;
   flex-direction: column;
@@ -123,9 +127,10 @@ footer {
   text-align: center;
 }
 
+/* Links inside the menu */
 #myLinks a {
   display: block;
-  color: white;
+  color: white !important;
   padding: 10px;
   text-decoration: none;
   font-size: 18px;
@@ -137,6 +142,7 @@ footer {
   border-radius: 5px;
 }
 
+/* Hamburger icon */
 .icon {
   cursor: pointer;
   color: white;
@@ -167,7 +173,10 @@ p {
   }
 
   .navbar {
-    display: none;
+    display: none !important;
+  }
+  img.first{
+    margin-top: 50px;
   }
 
   #logo {

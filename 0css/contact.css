@@ -216,7 +216,7 @@ footer {
   }
 
   .navbar {
-    display: none;
+    display: none !important;
   }
 
   #logo {
@@ -232,6 +232,7 @@ footer {
     display: none;
   }
 }
+
 
 @media (min-width: 769px) {
   .nav-container {
