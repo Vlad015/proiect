@@ -22,7 +22,7 @@ html, body {
     margin: 0;
     padding: 0;
     min-height: 100%;
-    font-family: "ShareTech", sans-serif;
+    font-family: "ShareTech", sans-serif !important;
     background: linear-gradient(to bottom, #a294f9, #f5efff);
     background-repeat: no-repeat;
     background-attachment: fixed; 
@@ -135,65 +135,6 @@ html, body {
     color: #A294F9;
 }
 
-/* Carduri */
-.card-container a {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    width: 100%;
-}
-
-.card-container {
-    width: 70%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px; /* Spațiul dintre carduri */
-    justify-content: space-between; /* Distribuire uniformă */
-    margin-top: 1%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.card {
-    position: relative;
-    background-color: #ffffff;
-    border-radius: 15px;
-    width: calc((100% - 60px) / 3); /* 3 carduri pe rând, cu spații */
-    height: 450px;
-    transition: transform 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-}
-
-.card h3 {
-    position: absolute;
-    width: 100%;
-    bottom: 20px;
-    text-align: center;
-    font-size: 30px;
-}
-
-.card:hover {
-    transform: scale(1.1);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
-}
-
-/* Imagini carduri */
-.imagine-card {
-    padding: 15px 15px 70px 15px;
-    overflow: hidden;
-    height: calc(100% - 0px);
-}
-
-.imagine-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
 /* Footer */
 footer {
     background-color: #ffffff;
@@ -268,7 +209,7 @@ footer {
   }
 
   .navbar {
-    display: none;
+    display: none !important;
   }
 
   #logo {
@@ -283,6 +224,69 @@ footer {
   .logo {
     display: none;
   }
+
+  .card-container a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+}
+
+.card-container {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Spațiul dintre carduri */
+    justify-content: space-between; /* Distribuire uniformă */
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 300px;
+    height: 450px;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    margin-bottom: 30px;
+}
+
+.card h3 {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
+}
+
+/* Imagini carduri */
+.imagine-card {
+    padding: 15px 15px 70px 15px;
+    overflow: hidden;
+    height: calc(100% - 0px);
+    width: 280px;
+    margin-left: 10px;
+}
+
+.imagine-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 300px;
+    min-width: ;
+    border-radius: 10px;
+}
 }
 
 @media (min-width: 769px) {
@@ -352,6 +356,71 @@ footer {
   .topnav {
     display: none;
   }
+  /* Carduri */
+.card-container {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Space between cards */
+  justify-content: space-between; /* Distribute cards evenly */
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.col-lg {
+  flex: 1 1 calc(33.33% - 30px); /* Ensure 3 items per row with the gap */
+  max-width: calc(33.33% - 30px); /* Make sure the cards don't exceed the row */
+  box-sizing: border-box; /* Ensure proper padding & borders */
+}
+
+/* Card styles */
+.card {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 15px;
+  height: 450px;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
+}
+
+/* Image card styles */
+.imagine-card {
+  padding: 15px 15px 70px 15px;
+  overflow: hidden;
+  height: calc(100% - 0px);
+}
+
+.imagine-card img {
+  width: 100%;
+  height: 100%;
+  max-height: 163.56px;
+  min-height: 163.56px;
+  object-fit: cover !;
+  border-radius: 10px;
+}
 }
 
 @media (min-width: 992px) {
@@ -421,6 +490,70 @@ footer {
   .topnav {
     display: none;
   }
+  card-container {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Space between cards */
+    justify-content: space-between; /* Distribute cards evenly */
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .col-lg {
+    flex: 1 1 calc(33.33% - 30px); /* Ensure 3 items per row with the gap */
+    max-width: calc(33.33% - 30px); /* Make sure the cards don't exceed the row */
+    box-sizing: border-box; /* Ensure proper padding & borders */
+  }
+  
+  /* Card styles */
+  .card {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 15px;
+    height: 450px;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .card h3 {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
+  }
+  
+  /* Image card styles */
+  .imagine-card {
+    padding: 15px 15px 70px 15px;
+    overflow: hidden;
+    height: calc(100% - 0px);
+  }
+  
+  .imagine-card img {
+    width: 100%;
+    height: 100%;
+    max-height: 300.56px;
+    min-height: 300.56px;
+    object-fit: cover !;
+    border-radius: 10px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -489,5 +622,69 @@ footer {
 
   .topnav {
     display: none;
+  }
+  card-container {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Space between cards */
+    justify-content: space-between; /* Distribute cards evenly */
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .col-lg {
+    flex: 1 1 calc(33.33% - 30px); /* Ensure 3 items per row with the gap */
+    max-width: calc(33.33% - 30px); /* Make sure the cards don't exceed the row */
+    box-sizing: border-box; /* Ensure proper padding & borders */
+  }
+  
+  /* Card styles */
+  .card {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 15px;
+    height: 450px;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .card h3 {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
+  }
+  
+  /* Image card styles */
+  .imagine-card {
+    padding: 15px 15px 70px 15px;
+    overflow: hidden;
+    height: calc(100% - 0px);
+  }
+  
+  .imagine-card img {
+    width: 100%;
+    height: 100%;
+    max-height: 300.56px;
+    min-height: 363.56px;
+    object-fit: cover !;
+    border-radius: 10px;
   }
 }
