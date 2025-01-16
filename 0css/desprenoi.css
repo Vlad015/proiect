@@ -21,13 +21,13 @@
 html, body {
     margin: 0;
     padding: 0;
-    min-height: 100%;
+    min-height: 100% !important;
     font-family: "ShareTech", sans-serif;
     background: linear-gradient(to bottom, #a294f9, #f5efff);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    align-items: center;
+    align-items: center ;
     overflow-x: hidden ;
 }
 p{
@@ -125,7 +125,7 @@ footer {
   color: #000;
   padding: 15px 40px;
   text-align: center;
-  position: relative;
+  position: relative ;
   bottom: 0;
   width: 40%;
   border-radius: 40px;
@@ -135,6 +135,7 @@ footer {
   margin-right: 30%;
   font-family: "ShareTech", sans-serif;
   font-size: 20px;
+  
 }
 
 .footer-content {
@@ -175,6 +176,9 @@ footer {
 
 .footer-links a:hover i {
   color: #a294f9;
+}
+#paragraf2{
+  width: 80%;
 }
 
 /* Responsive behavior */
