@@ -29,7 +29,7 @@ html, body {
   background: linear-gradient(to bottom, #a294f9, #f5efff);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover !important;
+  background-size: cover;
 }
 .container {
   margin-top: 10%;
@@ -80,7 +80,7 @@ legend {
 
 .footer-basic {
   padding: 40px 0;
-  background-color: inherit;
+  background-color: transparent;
   color: #000000;
   font-family: Arial, sans-serif;
 }

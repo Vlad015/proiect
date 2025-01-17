@@ -31,7 +31,6 @@ html, body {
     overflow-x: hidden ;
 }
 p{
-  max-width: 45%;
   text-align: justify;
 }
 
@@ -39,10 +38,14 @@ p{
   max-width: 100% !important;
 }
 .container{
-  position:absolute;
-  left: 20%;
+  padding-left: 10%;
   margin: 20px 0 0 20px;
   font-size: 18px;
+  width: 100%;
+}
+
+.row{
+  max-width: 100%;
 }
 
 
@@ -119,10 +122,15 @@ p{
 /* Footer */
 .footer-basic {
   padding: 40px 0;
-  background-color: inherit;
+  background-color: transparent;
   color: #000000;
   font-family: Arial, sans-serif;
+
 }
+ .footer-basic p{
+  display: flex;
+  align-items: center;
+ }
 
 .footer-basic ul {
   padding: 0;
@@ -186,7 +194,7 @@ p{
   justify-content: center;
 }
 #paragraf2{
-  width: 80%;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {

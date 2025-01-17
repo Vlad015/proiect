@@ -135,7 +135,7 @@ html, body {
 
 .footer-basic {
   padding: 40px 0;
-  background-color: inherit;
+  background-color: transparent;
   color: #000000;
   font-family: Arial, sans-serif;
 }
