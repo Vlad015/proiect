@@ -52,45 +52,50 @@
           </ul>
         </nav>
       </div>
-
+      <div class="m">
       <div class="container">
         <legend>Lasati-ne un mesaj!</legend>
         <div class="card" id="frame2">
-          <div class="mb-3">
-            <label for=""></label>
-          </div>
-          
-        <form action="https://api.web3forms.com/submit" method="POST">
-          <div class="mb-1">
+          <form action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="f859ccaa-e140-42d0-b71e-69f19e5e5205">
-            <textarea name="mesaj" id="mesaj" class="form-control" placeholder="Scrie un mesaj..."></textarea>
-            
-          </div>
-          <div class="mb-1">
-            <input name="email" type="email" class="form-control" id="email" placeholder="Email:">
-          </div>
-          <div class="mb-3">
-            <input name="name" type="text" class="form-control" id="name" placeholder="Nume:">
-          </div>
-          <button type="submit" class="btn btn-light">Trimite mesajul</button>
-        </form>
+      
+            <p></p>
+            <div class="mb-3">
+              <input name="name" type="text" class="form-control" id="name" placeholder="Nume:" required>
+            </div>
+      
+            <div class="mb-1">
+              <input name="email" type="email" class="form-control" id="email" placeholder="Email:" required>
+            </div>
+      
+            <p></p>
+            <div class="mb-1">
+              <textarea name="mesaj" id="mesaj" class="form-control" placeholder="Scrie un mesaj..." required></textarea>
+            </div>
+      
+            <p></p>
+            <button type="submit" class="btn btn-light">Trimite mesajul</button>
+          </form>
         </div>
+      
         <div class="response">
-            <p>Multumim iti vom raspunde in cel mai scurt timp!</p>
+          <p>Multumim! Îți vom răspunde în cel mai scurt timp!</p>
         </div>
       </div>
+    </div>
+      
+      
 
-      <footer>
-        <div class="footer-content">
-            <ul class="footer-links">
-                <li>
-                    <a href="/review1.html" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-                </li>
-                <li>
-                    <a href="/review1.html" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
-                </li>
-            </ul>
-        </div>
-    </footer>
+      <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-square-snapchat"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            </div>
+            <p>TechStuff - recenzii si bloguri</p>
+        </footer>
+    </div>
   </body>
 </html>
