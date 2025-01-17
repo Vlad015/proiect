@@ -29,7 +29,7 @@ html, body {
   background: linear-gradient(to bottom, #a294f9, #f5efff);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: cover !important;
 }
 .container {
   margin-top: 10%;
@@ -65,10 +65,12 @@ html, body {
 .form-label{
     color: rgba(0, 0, 0, 0.5);
 }
+
 legend {
   text-align: center;
   margin-top: 10px;
 }
+
 .btn{
     border-radius: 25px;
     margin-bottom:10px ;

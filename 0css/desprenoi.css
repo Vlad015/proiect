@@ -32,6 +32,7 @@ html, body {
 }
 p{
   max-width: 45%;
+  text-align: justify;
 }
 
 #paragraf2{
